@@ -10,13 +10,6 @@
 |------|------|
 | `laws.json` | 法规数据（标题/发布机构/正文全文等） |
 
-## 本地预览
-
-```bash
-cd docs && python3 -m http.server 8899
-# 浏览器 http://localhost:8899
-```
-
 ## 采集脚本（scripts/）
 
 法规采集脚本（NPC 国家法律法规数据库 / CSRC / gov.cn 等数据源）：
