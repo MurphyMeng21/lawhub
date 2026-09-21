@@ -297,6 +297,9 @@ function bindLawEvents() {
   si.addEventListener('input', () => { lawState.query = si.value; clearTimeout(timer); timer = setTimeout(() => { doLawSearch(); if (lawState.expandedId) { const dc=$('#content .detail-container'); if(dc){dc.classList.remove('active');dc.innerHTML='';} const lc=$('#content .list-container'); if(lc)lc.style.display=''; lawState.expandedId=null; } }, 250); sc.classList.toggle('visible', lawState.query.length > 0); });
   sc.addEventListener('click', () => { si.value=''; lawState.query=''; sc.classList.remove('visible'); doLawSearch(); si.focus(); });
 }
+
+// Init
+initLawModule();
 </script>
 </body>
 </html>
